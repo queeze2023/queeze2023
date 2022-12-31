@@ -25,7 +25,7 @@ var questionArr = [
         firstOption: "Elvis Costello",
         secondOption: "Midge Ure",
         thirdOption: "Sting",
-        correctAnswer: "#third-option"
+        correctAnswer: "#second-option"
     },
     {
         question: "Gdje se nalazi Pasjača, šljunčana plaža u podnožju visoke i strme stijene?",
@@ -39,7 +39,7 @@ var questionArr = [
         firstOption: "kitovi ubojice",
         secondOption: "sjeverni medvjedi",
         thirdOption: "velike bijele psine",
-        correctAnswer: "#third-option"
+        correctAnswer: "#first-option"
     },
     {
         question: "Koji se način lova naziva i brakada?",
@@ -172,7 +172,7 @@ var questionArr = [
         firstOption: "u Lausannei",
         secondOption: "u Stockholmu",
         thirdOption: "u Tallinu",
-        correctAnswer: "#frist-option"
+        correctAnswer: "#first-option"
     },
     {
         question: "Ako se na pašnjaku sretnu lička pramenka i dubrovačka ruda, kako će se sporazumjeti?",
