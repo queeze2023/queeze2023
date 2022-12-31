@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Queeze - Specijalno Izdanje</title>
+    <link rel="shortcut icon" type="image/jpg" href="assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;500&family=Nunito+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="top-container">
+        <div style="float:left;margin-top:-0.25em;"><img src="assets/images/favicon.png" height="40em"></div> 
+        <div style="margin-top:-0.125em; margin-left:0.5em; background-color:rgba(0,0,0,0.0);color:#ffde02;font-size:1.25em;">Queeze</div>
+        <div id="countdown-div">Vrijeme: <span id="countdown">5 min</span></div>
+    </div>
+    <div id="main-container">
+        <div id="start">
+            <img style="display: block; margin-left: auto; margin-right: auto; width: 300px; border-radius: 10px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="assets/images/meme.jpg">
+            <br>
+            <h2>Novogodišnji kviz općeg znanja</h2>
+            <p>
+                Koliko znaš o <em>svemu?</em><br>Provjeri ulaziš li u novu 2023. godinu kao vrsni poznavatelj općeg znanja ili spremaš novogodišnju rezoluciju?<br><br>Pokušaj odgovoriti na svih <strong>30 pitanja unutar 5 minuta</strong>.<br>Prethodno odgovorena pitanja se, kao i prošla 2022. godina, ne mogu vratiti.<br>Nakon što odgovoriš na sva pitanja (ili istekne vrijeme za odgovaranje) prikazat će se rezultat i točni odgovori.
+            </p>
+            <p style="color:red;">
+                (Osvježavanje stranice i slične nepredviđene radnje onemogućavaju provedbu kviza)
+            </p>
+            <div id="start-btn-div"><button style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" id="start-quiz">Započni kviz</button></div>
+        </div>
+        <div style="padding:20px 20px 20px 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" id="questions" class="hide">
+            <h4><span id="question-number"></span>. <span id="question"></span></h4>
+            <div id="answer-buttons" class="">
+                <button id="first-option" class=""></button>
+                <button id="second-option" class=""></button>
+                <button id="third-option" class=""></button>
+            </div>
+            <div id="next-div" class="hide">
+                <button id="next-question">Next</button>
+            </div>
+        </div>
+        <div id="complete" class="hide">
+            <h3 id="complete-msg">Sva pitanja odgovorena su unutar zadanog vremena.</h3>
+            <p id="complete-p">Rezultat: <strong><span id="user-score">0</span></strong><span id="user-score-msg"></span></p>
+        </div>
+    </div> 
+    <script src="assets/js/questions.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
